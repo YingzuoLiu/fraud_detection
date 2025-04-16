@@ -14,7 +14,11 @@ class Config:
     AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
     AWS_REGION = os.getenv("AWS_REGION", "ap-southeast-1")
     SAGEMAKER_ROLE = "arn:aws:iam::204529129889:role/SageMaker-ExecutionRole"
-    S3_BUCKET = "fraud-detection-project-yz"  # 你需要创建这个bucket
+    S3_BUCKET = "fraud-detection-yz-2025"  
+    
+    # Kaggle配置
+    KAGGLE_USERNAME = os.getenv("KAGGLE_USERNAME")
+    KAGGLE_KEY = os.getenv("KAGGLE_KEY")
     
     # 路径配置
     DATA_DIR = ROOT_DIR / "data"
